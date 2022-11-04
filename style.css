@@ -87,6 +87,60 @@ section {
     text-align: center;
 }
 
-.img1 {
-    width: 200px;
+.img1, .img2, .img3, .img4 {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: solid 5px #3882f6;
+    gap: 8px;
+}
+
+.content2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+}
+
+.box, .warlock, .titan, .hunter {
+    border: solid 5px greenyellow;
+    align-items: center;
+}
+
+.info1 {
+    border: 5px solid yellow;
+}
+
+.image-list {
+    display: flex;
+    flex: 1;
+    flex-shrink: 1;
+    list-style: none;
+    gap: 50px;
+}
+
+.image-list, p {
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    text-align: center;
+}
+.content3 {
+    padding: 80px;
+    border: 40px;
+    background-color: #e5e7eb;
+    justify-content: space-around;
+}
+
+.quote {
+    text-align: center;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-end;
 }
