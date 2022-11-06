@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .site {
     display: flex;
     min-height: 100vh;
@@ -9,12 +15,6 @@
 }
 .site-content {
     flex: 1;
-}
-body {
-
-}
-header, footer {
-    border: 3px solid blue;
 }
 
 header {
@@ -30,6 +30,7 @@ header {
 .nav-links {
     display: flex;
     justify-content: center;
+    margin-right: 10px;
 }
  .links{
     list-style: none;
@@ -39,11 +40,7 @@ header {
     color: white;
  }
 
-.logo {
-    border:5px solid green;
-}
 section {
-    border: 10px solid salmon;
     min-height: 100px;
 }
 
@@ -66,14 +63,16 @@ section {
 
 .pic1 {
     display: flex;
+    width: 100%;
+    flex: 1;
     align-items: center;
 }
 
 .content1{
     display: flex;
+    padding: 10px;
     flex-direction: row-reverse;
     background-color:#1f2937;
-    padding: 10px;
 }
 
 .sign-up {
@@ -87,12 +86,12 @@ section {
     text-align: center;
 }
 
-.img1, .img2, .img3, .img4 {
+.hunter, .warlock, .titan {
     max-width: 50%;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
-    border: solid 5px #3882f6;
+    flex-direction: column;
     gap: 8px;
 }
 
@@ -102,13 +101,10 @@ section {
     background-color: grey;
 }
 
-.box, .warlock, .titan, .hunter {
-    border: solid 5px greenyellow;
+.box img {
+    border: solid 5px #3882f6;
+    border-radius: 10px;
     align-items: center;
-}
-
-.info1 {
-    border: 5px solid yellow;
 }
 
 .image-list {
@@ -143,4 +139,39 @@ footer {
 .author {
     display: flex;
     justify-content: flex-end;
+}
+
+.content4 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.text, .join {
+    border-radius: 10px;
+    color: #f9faf8;
+    gap: 8px;
+    line-height: 1;
+    flex-shrink: 1;
+}
+
+.text {
+    justify-content: flex-start;
+}
+
+.join {
+    height: 30px;
+    align-self: center;
+    justify-content: flex-end;
+    background-color: #3882f6;
+    border: solid 1px  #f9faf8;
+}
+
+.container {
+    display: flex;
+    background-color: #3882f6;
+    padding: 10px;
+    width: 700px;
+    border-radius: 20px;
+    gap: 100px;
 }
