@@ -56,14 +56,13 @@ section {
 }
 
 .space {
-    width: 400px;
+    width: 100%;
     margin-right: 20px;
     border-radius: 10px;
 }
 
 .pic1 {
     display: flex;
-    width: 100%;
     flex: 1;
     align-items: center;
 }
@@ -99,6 +98,7 @@ section {
     display: flex;
     justify-content: space-around;
     background-color: grey;
+    padding-right: 10px;
 }
 
 .box img {
@@ -109,6 +109,7 @@ section {
 
 .image-list {
     display: flex;
+    justify-content: space-between;
     flex: 1;
     flex-shrink: 1;
     list-style: none;
@@ -148,7 +149,7 @@ footer {
 }
 
 .text, .join {
-    border-radius: 10px;
+    border-radius: 5px;
     color: #f9faf8;
     gap: 8px;
     line-height: 1;
